@@ -1,0 +1,18 @@
+Mỗi chức năng sẽ có:
+.h: Khai báo hàm, struct, class
+.cpp: Cài đặt chi tiết
+Cách chạy trên VS Code
+    Mở thư mục dự án (BTL_OOP_NHOM 6) trong VS Code
+    Cài extension C/C++ (Microsoft)
+    Mở terminal (Ctrl + Shift + `)
+    Gõ lệnh biên dịch: 
+        g++ main.cpp (file_chuc_nang_can_chay_thu.cpp) -o main.exe
+    Chạy:
+        ./main.exe
+    Ví dụ: 
+        chức năng F1 có 2 file .cpp và .h
+        để chạy trong hàm main: 
+            mở terminal
+            gõ: g++ main.cpp F1.cpp -o main.exe
+            gõ: ./main.exe
+            
