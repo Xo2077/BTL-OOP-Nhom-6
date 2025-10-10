@@ -4,6 +4,8 @@
 // - Sửa thông tin hành khách.
 
 #include "F2.h"
+#include "F1.h"
+
 #include <iostream>
 #include <vector>
 using namespace std;

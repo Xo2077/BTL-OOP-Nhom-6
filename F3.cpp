@@ -4,6 +4,8 @@
 // - Yêu cầu nhập thông tin hành khách (hoặc chọn từ danh sách đã có).
 // - Xác nhận đặt vé, lưu thông tin vé (mã vé, thông tin chuyến bay, thông tin hành khách).
 // - Cập nhật lại số ghế trống của chuyến bay.
+// - Loại vé đặt
+
 
 #include "F3.h"
 #include <iostream>
