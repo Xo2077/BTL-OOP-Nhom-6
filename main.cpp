@@ -15,7 +15,7 @@ int main() {
         cout << "\n===== MENU =====\n";
         cout << "1. Them cong viec\n";
         cout << "2. Xem danh sach\n";
-        cout << "3. Menu dat ve\n";
+        
         cout << "0. Thoat\n";
         cout << "Lua chon: ";
         cin >> choice;
@@ -24,7 +24,7 @@ int main() {
         switch (choice) {
             case 1: addTask(); break;
             case 2: showAllTasks(); break;
-            case 3: menuDatVe(); break;
+        
             case 0: cout << "Thoat chuong trinh!\n"; break;
             default: cout << "Lua chon khong hop le!\n"; break;
         }

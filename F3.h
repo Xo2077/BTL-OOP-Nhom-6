@@ -1,3 +1,11 @@
+// Đặt vé cho hành khách
+// - Hiển thị các chuyến bay còn chỗ trống.
+// - Yêu cầu nhập mã chuyến bay muốn đặt.
+// - Yêu cầu nhập thông tin hành khách (hoặc chọn từ danh sách đã có).
+// - Xác nhận đặt vé, lưu thông tin vé (mã vé, thông tin chuyến bay, thông tin hành khách).
+// - Cập nhật lại số ghế trống của chuyến bay.
+// - Loại vé đặt
+
 #ifndef F3_h
 #define F3_h
 
@@ -6,55 +14,7 @@
 #include <vector>
 using namespace std;
 
-// Thong tin chuyen bay
-struct Flight {
-    string maChuyenBay;
-    string noiDi;
-    string noiDen;
-    string ngayBay;
-    string gioBay;
-    int tongSoGhe;
-    int gheTrong;
 
-    void hienThiThongTin() const;
-};
-
-// Thong tin hanh khach
-struct Passenger {
-    string maHK;
-    string hoTen;
-    string cmnd;
-    string sdt;
-
-    void nhapThongTin();
-    void hienThi() const;
-};
-
-// Thong tin ve
-struct Ticket {
-    string maVe;
-    string maChuyenBay;
-    string maHK;
-    string loaiVe;  // Thuong, Pho thong, Hang nang cap
-};
-
-// He thong quan ly chuyen bay
-class AirlineSystem {
-private:
-    vector<Flight> dsChuyenBay;
-    vector<Passenger> dsHanhKhach;
-    vector<Ticket> dsVe;
-
-public:
-    void hienThiChuyenBayConCho();
-    void datVe();
-    void themChuyenBay(const Flight& f);
-    void themHanhKhach(const Passenger& p);
-    void hienThiTatCaVe() const;
-    size_t soLuongHanhKhach() const { return dsHanhKhach.size(); }
-};
-
-void menuDatVe(); 
 
 #endif
 
