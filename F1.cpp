@@ -4,7 +4,7 @@
 // - Sửa thông tin chuyến bay (chỉ cho phép sửa khi chưa có ai đặt vé).
 // - Xóa chuyến bay.
 
-#include "F1.h"
+#include "all_class.h"
 #include <iostream>
 #include <vector>
 using namespace std;
