@@ -9,26 +9,32 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+airplane_ticket::airplane_ticket(){
+so_luong_ve=0;
+ngay_thang_bay="null";}
 
-vector<Task> taskList;
-
-void addTask() {
-    Task t;
-    cout << "Nhap ten cong viec: ";
-    getline(cin, t.name);
-    cout << "Nguoi thuc hien: ";
-    getline(cin, t.assignee);
-    cout << "Trang thai: ";
-    getline(cin, t.status);
-    cout << "Muc do uu tien (1-3): ";
-    cin >> t.priority;
-    cin.ignore();
-    taskList.push_back(t);
+airplane_ticket::nhap_ve(){
+cout << "Nhap ngay thang bay: ";
+        cin >> ngay_thang_bay;
+  cout<<"nhap so luong ve :"<<endl;
+  cin>>so_luong_ve;
+ ma_ve.clear();
+  for(int i=0;i<so_luong_ve;i++){
+    int ma;
+    cout<<"nhap so luong ve thu "<<i+1<<":";
+    cin>>ma;
+   ma_ve.push_back(ma);
+  }
+ airplane_ticket::~airplane_ticket(){
+     cout<<"ve co ma :"<<ma_ve
 }
-
-void showAllTasks() {
-    cout << "\n=== DANH SACH CONG VIEC ===\n";
-    for (auto &t : taskList) {
-        cout << "- " << t.name << " | " << t.assignee << " | " << t.status << " | Priority: " << t.priority << endl;
+ void hien_thi() {
+        cout << "\nNgay bay: " << ngay_thang_bay << endl;
+        cout << "So luong ve: " << so_luong_ve << endl;
+        cout << "Danh sach ma ve: ";
+        for (int i = 0; i < ma_ve.size(); i++) {
+            cout << ma_ve[i] << " ";
+        }
+        cout << endl;
     }
-}
+};
