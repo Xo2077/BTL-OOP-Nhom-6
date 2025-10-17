@@ -1,8 +1,9 @@
 //Quản lý danh sách chuyến bay
 // - Thêm chuyến bay mới (Mã chuyến bay, nơi đi, nơi đến, ngày giờ, số lượng ghế).
-// - Hiển thị toàn bộ danh sách chuyến bay.
+// - Hiển thị toàn bộ danh sách chuyến bay.(trong này có phần quản lí vé)
 // - Sửa thông tin chuyến bay (chỉ cho phép sửa khi chưa có ai đặt vé).
 // - Xóa chuyến bay.
+
 
 #include "all_class.h"
 #include <iostream>
